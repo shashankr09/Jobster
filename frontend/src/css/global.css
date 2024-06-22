@@ -1,0 +1,178 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'RobotoRegular',sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #102a43;
+    background-color: #f0f4f8;
+  }
+
+  
+  .main-container {
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+button {
+    font-size: 1.15rem;
+    padding: 12px 24px;
+    background: #486581;
+    color: #ffffff;
+    border: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-input,
+.form-select {
+    box-sizing: border-box;
+    height: 30px;
+    width: 100%;
+    border:1px solid grey;
+}
+
+.form-input {
+    padding: 0;
+
+}
+
+form .btn {
+    margin-bottom: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    height: 100vh;
+}
+
+header{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+ 
+    gap: 2.5rem;
+    padding: 1rem 1.5rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card header{
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+ 
+    gap: 2.5rem;
+    padding: 1rem 1.5rem;
+}
+
+.container form ,
+.container .job-form{
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+
+.button-container button,
+.dashboard button,
+.topbar button {
+    background-color: #334e68;
+   color: white;
+    padding: 5px 12px;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-self: end;
+    margin-bottom: 0.6rem;
+}
+
+.card{
+    background-color: white;
+    max-width:400px;
+    margin-top: 3rem;
+}
+
+.job-icon{
+height: 60px;
+width: 60px;
+border-radius: 40px;
+border:1px solid black;
+padding: 15px 25px;
+background-color: #334e68;
+color: white;
+}
+
+.content,footer{
+    padding: 1rem 1.5rem;
+}
+.content .icon{
+    margin-right:1.5rem;
+}
+.job-container .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.edit-btn{
+    margin-right: 1.5rem;
+}
+
+.container.left{
+    /* display: grid; */
+    grid-template-columns: 1fr;
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
+
+    .small-sidebar{
+        position: absolute;
+        width:100vw;
+        z-index: 9999;
+        height:50vh;
+    }
+    .container form ,
+.container .job-form,
+.job-container .content{
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 1fr;
+}
+
+.job-container .content{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem; */
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+   }
