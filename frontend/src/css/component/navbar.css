@@ -1,0 +1,12 @@
+.main-container nav,
+.sidebar nav,
+.small-sidebar nav{
+    height: 6rem;
+    display: flex;
+    align-items: center;
+}
+
+.container nav{
+    margin-left: 2.5rem;
+}
+

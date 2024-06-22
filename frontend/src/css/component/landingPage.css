@@ -1,0 +1,54 @@
+.main-container section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3.5rem;
+}
+
+.main-container .welcome form {
+    /* margin-left: 6rem; */
+    max-width: 50%;
+}
+
+.main-container .welcome h1 span {
+    color: #486581;
+}
+
+.main-container .welcome .userFormButton {
+    padding: 0;
+    background: none;
+    color: #486581;
+}
+
+.main-container .welcome h1 {
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.main-container .welcome p {
+    color: #486581;
+    max-width: 40em;
+    font-size: 1.33rem;
+}
+
+@media only screen and (max-width: 992px) {
+   /* section:first-child{
+    display: none;
+   } */
+    section .image{
+        display: none;
+    }
+
+    .main-container .welcome form{
+      margin: 0 auto;
+        margin-top: 1rem;
+    }
+
+    .main-container .welcome h1{
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .main-container section{
+        grid-template-columns: 1fr;
+    }
+  }
